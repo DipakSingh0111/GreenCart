@@ -1,9 +1,10 @@
-
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
 function App() {
 
   return (
     <>
-      <h1 className="bg-red-500 text-xl">Deepak</h1>
+      <Navbar />
     </>
   )
 }
