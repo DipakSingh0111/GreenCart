@@ -1,13 +1,13 @@
-import React from 'react'
-import { assets } from '../assets/assets'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { assets } from '../assets/assets';
+import { Link } from 'react-router-dom';
 
 const MainBanner = () => {
     return (
-        <div className="relative">
+        <div className="relative mt-20"> {/* Add top margin to avoid navbar overlap */}
             {/* Background Images */}
             <img src={assets.main_banner_bg} alt="main_banner_bg" className="w-full hidden md:block" />
-            <img src={assets.main_banner_bg_sm} alt="main_banner_bg" className="w-full md:hidden" />
+            <img src={assets.main_banner_bg_sm} alt="main_banner_bg_sm" className="w-full md:hidden" />
 
             {/* Overlay Content */}
             <div className="absolute inset-0 z-10 flex flex-col items-center md:items-start justify-end md:justify-center px-4 pt-16 pb-24 md:pb-0 md:pt-0 md:pl-18 lg:pl-24">
@@ -28,7 +28,6 @@ const MainBanner = () => {
                         />
                     </Link>
 
-                    {/* "Explore deals" button with black text & arrow */}
                     <Link
                         to="/products"
                         className="group hidden md:flex items-center gap-2 px-9 py-3 text-black"
@@ -43,8 +42,7 @@ const MainBanner = () => {
                 </div>
             </div>
         </div>
+    );
+};
 
-    )
-}
-
-export default MainBanner
+export default MainBanner;
