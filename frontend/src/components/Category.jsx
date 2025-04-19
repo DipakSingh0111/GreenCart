@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { assets, categories } from '../assets/assets'
+import { categories } from '../assets/assets'
 import { AppContext } from '../context/AppContext'
 
 const Category = () => {
